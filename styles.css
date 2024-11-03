@@ -1,0 +1,47 @@
+body {
+    background-color: #eaecdb;
+    font-family: 'Verdana', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #4caf50; /* Header background color */
+    color: white; /* Text color */
+    padding: 20px; /* Padding for header */
+    border-radius: 8px; /* Rounded corners for header */
+}
+
+.wrapper {
+    border: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd; /* Light border for cards */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 10px;
+    padding: 15px;
+    width: 220px; /* Fixed card width */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition effects */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+.card img {
+    width: 100%; /* Full width images */
+    border-radius: 12px; /* Match card corners */
+}
+
+.hidden-recipe, .hidden-calories {
+    display: none; /* Initially hide recipe and calorie info */
+}
